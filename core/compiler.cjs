@@ -36,7 +36,7 @@ function exportBundle(vault,outputBase,options={}) {
   const result=compile(vault.list(),vault.project(),options);fs.mkdirSync(outputBase,{recursive:true});
   const stamp=new Date().toISOString().replace(/[:.]/g,'-'),folder=path.join(outputBase,titleFile(options.title||path.basename(vault.root)).slice(0,70)+'-'+stamp+'-'+crypto.randomUUID().slice(0,6));
   fs.mkdirSync(folder,{recursive:false});
-  const manifest={schemaVersion:1,product:'Artemis Prompter',publisher:'Artemis Softworks LLC',generated:new Date().toISOString(),files:[]};
+  const manifest={schemaVersion:1,product:'Cohnsoft Prompter',publisher:'Cohnsoft',generated:new Date().toISOString(),files:[]};
   for(const [relative,text]of Object.entries(result.files)){const file=path.join(folder,relative);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,text,{flag:'wx',mode:0o600});manifest.files.push({path:relative,sha256:hash(text),bytes:Buffer.byteLength(text)});}
   result.files['manifest.json']=JSON.stringify(manifest,null,2)+'\n';fs.writeFileSync(path.join(folder,'manifest.json'),result.files['manifest.json'],{flag:'wx',mode:0o600});
   const zipped=Object.fromEntries(Object.entries(result.files).map(([name,text])=>[name,strToU8(text)]));fs.writeFileSync(path.join(folder,'Prompt.bundle.zip'),zipSync(zipped),{flag:'wx',mode:0o600});

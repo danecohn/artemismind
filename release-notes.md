@@ -1,4 +1,4 @@
-Artemis Mind 0.1.0 by Artemis Softworks LLC.
+Cohnsoft Mind 0.1.1 by Cohnsoft.
 
 Original local-first Markdown application for Windows Intel/ARM, macOS Intel/Apple silicon, and Linux Intel/ARM. Each native package passes file read/write and rendering checks before publication; Prompter also compiles and exports a real connected prompt bundle. SHA-256 files accompany the installers.
 

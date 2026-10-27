@@ -1,8 +1,8 @@
-# Artemis Mind
+# Cohnsoft Mind
 
 Mind is a local Markdown notebook with linked notes, backlinks, tags, outlines, pinned notes, daily notes, a graph, image attachments, full-text search, and separate writing/reading views.
 
-By **Artemis Softworks LLC**, founded by **Demetria Althea Cohn**. GPL-3.0-only.
+By **Cohnsoft**, founded by **Demetria Althea Cohn**. GPL-3.0-only.
 
 ## Install
 
@@ -31,4 +31,9 @@ Use Node 24, npm ci, npm test, npm run build, then npm start. npm run package cr
 
 ## Future services
 
-This release is desktop-only and works offline. Web apps, MCP endpoints, sign-in, synchronization and Artemis Drive integration are planned separately and are not included. The versioned local Markdown/JSON schema and stable IDs are designed to support that work without replacing your files. No Obsidian Sync or community plugins are used.
+This release is desktop-only and works offline. Web apps, MCP endpoints, sign-in, synchronization and Cohnsoft Drive integration are planned separately and are not included. The versioned local Markdown/JSON schema and stable IDs are designed to support that work without replacing your files. No Obsidian Sync or community plugins are used.
+
+The existing bundle/application IDs, preferences directory, vault metadata (`.artemis`),
+Markdown formats and managed Documents folder are retained across upgrades.
+Cohnsoft identity assets and local Cohn Sans are pinned to cohnsoftassets
+`752e894f90f1e58e62ae466352cb03c8bfd7d703`; company artwork remains unchanged.

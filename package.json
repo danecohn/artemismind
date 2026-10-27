@@ -1,9 +1,9 @@
 {
   "name": "artemis-mind",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "license": "GPL-3.0-only",
-  "author": "Artemis Softworks LLC",
+  "author": "Cohnsoft",
   "main": "desktop/main.cjs",
   "scripts": {
     "build": "node scripts/build.cjs",
@@ -28,13 +28,13 @@
     "electron-builder": "26.17.0",
     "esbuild": "0.28.2"
   },
-  "productName": "Artemis Mind",
+  "productName": "Cohnsoft Mind",
   "description": "Local Markdown notes and connected thinking.",
   "homepage": "https://github.com/danecohn/artemismind",
   "build": {
     "appId": "com.artemissoftworks.mind",
-    "productName": "Artemis Mind",
-    "copyright": "Copyright \u00a9 2026 Artemis Softworks LLC",
+    "productName": "Cohnsoft Mind",
+    "copyright": "Copyright \u00a9 2026 Cohnsoft",
     "directories": {
       "output": "release"
     },
@@ -79,7 +79,7 @@
       ],
       "icon": "assets/icon.png",
       "category": "Office",
-      "maintainer": "Artemis Softworks LLC"
+      "maintainer": "Cohnsoft"
     }
   }
 }
