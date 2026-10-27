@@ -5,3 +5,5 @@ Local-first Markdown application for Windows Intel/ARM, macOS Intel/Apple silico
 Mac builds are ad-hoc signed and strictly verified, including the application mounted from the downloaded disk image. They are not Apple-notarized. Windows builds are unsigned. No account, cloud sync or MCP connection is included in this desktop release.
 
 GPL-3.0-only. Third-party notices retained. This is independent original software, not a fork or rebrand of the proprietary Obsidian application.
+
+VigilTech branding release 0.1.2. Existing application identifiers, local data paths and installer filenames remain compatible. Current supplied artwork and fonts are unchanged. Mac builds are ad-hoc signed and not Apple-notarized; Windows installers are unsigned.
